@@ -110,13 +110,13 @@ nav button {
 }
 
 @media screen and (max-width: 1065px) {
-    .wrapper ul:first-of-type li:nth-last-of-type(-n+2) {
+    .wrapper > nav > ul:first-of-type > li:nth-last-of-type(-n+2) {
         display: none;
     }
 }
 
 @media screen and (max-width: 835px) {
-    .wrapper ul:last-of-type {
+    .wrapper > nav > ul:last-of-type > li {
         display: none;
     }
 }

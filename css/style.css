@@ -8,10 +8,11 @@
 
 header {
     width: 100%;
+    min-width: 665px;
 }
 
 .wrapper {
-    width: 65%;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -106,4 +107,16 @@ nav button {
 
 .nuovo-text::after {
     content: 'Nuovo';
+}
+
+@media screen and (max-width: 1065px) {
+    .wrapper ul:first-of-type li:nth-last-of-type(-n+2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 835px) {
+    .wrapper ul:last-of-type {
+        display: none;
+    }
 }

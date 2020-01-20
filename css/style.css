@@ -36,7 +36,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: grey;
+    color: rgb(139, 149, 158);
 }
 
 nav ul li a:hover {
@@ -63,7 +63,7 @@ nav button {
 }
 
 .dropdown.active {
-  display: flex;
+    display: flex;
 }
 
 .dropdown {
@@ -75,7 +75,7 @@ nav button {
     transform: translateX(-50%);
     background: white;
     margin-top: 10px;
-    color: grey;
+    color: rgb(139, 149, 158);
     font-size: 16px;
 }
 

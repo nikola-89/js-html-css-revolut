@@ -2,17 +2,21 @@ $(document).ready(function() {
 // ***************************
     $('.text-with-dropdown').mouseover(
         function() {
-            dropdown(this);
+            removeDropwonActive();
+            dropdownActive(this);
     });
 
     $(document).click(
         function() {
-            $('.dropdown.active').removeClass('active');
+            removeDropwonActive();
     });
 // ***************************
 });
 
-function dropdown(thisElement) {
-    $('.dropdown.active').removeClass('active');
+function dropdownActive(thisElement) {
     $(thisElement).children('.dropdown').addClass('active');
+}
+
+function removeDropwonActive() {
+    $('.dropdown.active').removeClass('active');
 }
